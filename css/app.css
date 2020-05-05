@@ -1,3 +1,14 @@
+@keyframes moveInbottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -31,6 +42,7 @@ body {
 .intro {
   height: 100vh;
   position: relative;
+  animation: moveInbottom 2s ease;
 }
 
 .intro__text-box {
